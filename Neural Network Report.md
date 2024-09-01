@@ -1,4 +1,4 @@
-# Neural Network Model Report
+# Alphabet Soup - Neural Network Model Report
 
 ## Overview
 
@@ -25,26 +25,26 @@
 ### Compiling, Training, and Evaluating the Model:
 #### 1. The initial model included two layers. The first layer has 30 neurons, the second layer had 10 neurons. The activation functions for both hidden layers, as well as the output layer were set as "ReLu". 
 
-![alt text](initial_model.png)
+![alt text](<Images/initial_model.png>)
 
 #### The original decision for the high number of neurons was based on the high number of columns (44) possible after utilizing the "get dummies" function provided in the guidance starter code. The majority of the examples provided during class were successful with two hidden layers, hence the initial decision to remain as two layers for this model. In visual modeling tools provided in class(TensorFlow Playground), ReLu seemed to provide greater flexibility in determining adequately separated populations for the output. 
 
 #### 2. The initial model was close, but fell short of the target model performance: 72.5% (actual) vs 75% (target).
 
-![alt text](initial_eval.png)
+![alt text](<Images/initial_eval.png>)
 
 #### 3. Three attempts were made to imprive performance of the model.
 #### * First optimization attempt: increase the number of nodes and change output activation to Sigmoid. This model did not change the accuracy, which remained at 72.5%.
-![alt text](Model_Opt_1.png)
-![alt text](Model_Eval_1.png)
+![alt text](<Images/Model_Opt_1.png>)
+![alt text](<Images/Model_Eval_1.png>)
 
 #### * Second optimization attempt: return to the original number of nodes (30 and 10), add an third layer (also 30 modes), and change all activations to Signmoid. This model did not effectively change the accuracy, which resulted as 72.6%.
-![alt text](Model_Opt_2.png)
-![alt text](Model_Eval_2.png)
+![alt text](<Images/Model_Opt_2.png>)
+![alt text](<Images/Model_Eval_2.png>)
 
 #### * Third optimization attempt: return to the original two layers, reduce the number of nodes to 15 and 10, and return hidden layer activations to ReLu. These changes were made to determine if previous models were expereiencing "overfitting." This model did not effectively change the accuracy, which resulted as 72.8%.
-![alt text](Model_Opt_3.png)
-![alt text](Model_Eval_3.png)
+![alt text](<Images/Model_Opt_3.png>)
+![alt text](<Images/Model_Eval_3.png>)
 
 ## Summary
 
